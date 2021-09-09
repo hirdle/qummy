@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial';
 }
 .container_content{
     width: 100%;
@@ -56,6 +60,117 @@ body{
     bottom: 0;
 }
 
+.works__title.first{
+    padding-top: 100px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.works__title.main{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.works__title.main2{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.works__title{
+    text-align: center;
+
+}
+
+.works__title.second{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.works__cards{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.works__card{
+    height: 270px;
+    width: 270px;
+    border: 1px solid #C2C2C2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.works__card__text{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.works__card__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.quote{
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works__title.quotes{
+    padding-left: 15px;
+    margin-left: -5px;
+    max-width: 420px;
+    text-align-last: left;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.quotation{
+    display: block;
+    margin-top: 10px;
+}
+
+.works__main__title{
+    margin-top: 75px;
+    max-width: 877px;
+    font-weight: 700;
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+.works_hr{
+    height: 4px;
+    margin-bottom: 50px;
+    border: 0;
+    background: 4px linear-gradient(90deg, #FF8000 0%, #FFD600 100%);
+    border-radius: 5px;
+}
+
+.works__text{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
 
 @media (max-width: 767px) {
     .intro__texts{
@@ -78,6 +193,37 @@ body{
     .intro__text{
         width: 100%;
         font-size: 14px;
+    }
+
+    .works__card{
+        width: 155px;
+        height: 155px;
+        padding: 10px;
+    }
+    .works__cards{
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    grid-gap: 20px;
+    }
+
+    .works__card__text{
+        font-size: 14px;
+    }
+    .works__card__title{
+        font-size: 18px;
+    }
+    .works__card__img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .works__main__title{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .works__title.quotes{
+        font-size: 20px;
     }
 }
 
