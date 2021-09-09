@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.container_content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px ;
+}
+
+.intro{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(103.11deg, #FF8000 0%, #FF8000 40.95%, #FFD600 100%);
+}
+
+.intro__logo{
+    display: block;
+    margin: 0px auto;
+    padding-top: 25px;
+}
+
+.intro__texts{
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+.intro__title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    color: #FFFFFF;
+}
+
+.intro__title span{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100px;
+}
+
+.intro__text{
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF; 
+}
+
+.intro__img{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+@media (max-width: 767px) {
+    .intro__texts{
+        max-width: 100%;
+        margin-top: 0;
+    }
+    .intro__img{
+        width: 206px;
+        
+    }
+    .intro__title{
+        width: 100%;
+        font-size: 30px;
+    line-height: 50px;
+
+    }
+    .intro__title span{
+        font-size: 40px;
+    }
+    .intro__text{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
