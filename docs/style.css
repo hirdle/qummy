@@ -347,13 +347,99 @@ border: 2px solid #FFFFFF;
     max-width: 100%;
 }
 
-/*.clients__img:first-child{
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 50px;
+.benefit{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 100px;
-}*/
+}
 
+.benefit__card{
+    width: fit-content;
+    height: 125px;
+    padding-right: 40px;
+    border-right: 4px solid #E5E5E5;
+}
+
+.benefit__card__title{
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #FF8B0F;
+}
+
+.benefit__card__title span{
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    color: #FF8B0F;
+}
+
+.benefit__card__text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.prices{
+    display: flex;
+    justify-content: flex-end;
+    min-height: 500px;
+    background: url('./img/dish.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.prices__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+}
+
+.prices__content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.prices__card{
+    /*margin: 0 auto;*/
+}
+
+.prices__cardss{
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 700px;
+    height: 400px;
+    background: url('./img/con1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prices__title{
+    margin-top: 80px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.prices__card__text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.prices__card__price{
+    font-weight: 900;
+    font-size: 45px;
+    color: #FF8B0F;
+}
+
+.price_content{
+    margin-right: 60px;
+}
 
 @media (max-width: 1000px) {
     .expenses__cards{
@@ -477,5 +563,65 @@ border: 2px solid #FFFFFF;
     .pluses__text{
         font-size: 14px;
     }
+    .benefit{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .benefit__card__title{
+        font-size: 18px;
+    }
+    .benefit__card__title span{
+        font-size: 20px;
+    }
+    .benefit__card__text{
+        font-size: 14px;
+    }
+    .benefit__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin-top: 30px;
+    }
+    .benefit__card:nth-child(2n){
+        border-right: none;
+        padding-right: 0;
+    }
+    .prices__cardss{
+        margin-top: 40px;
+        margin-right: 0px;
+        width: 300px;
+        height: 360px;
+        background: url('./img/con2.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .prices__title{
+        font-size: 30px;
+        padding-top: 110px;
+    }
+    .prices__card__text{
+        font-size: 14px;
+    }
+    .prices__card__price{
+        font-size: 25px;
+    }
+    .prices{
+        padding-top: 140px;
+        display: block;
+        background-position: top;
+    }
+    .price_content{
+        margin-right: 0px;
+    }
+    .prices__content{
+        display: block;
+    }
+    /*.benefit__card:nth-child(1), .benefit__card:nth-child(2){
+        
+        border-bottom: 4px solid #E5E5E5;
+    }*/
 }
 
