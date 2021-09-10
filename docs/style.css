@@ -441,6 +441,35 @@ border: 2px solid #FFFFFF;
     margin-right: 60px;
 }
 
+.profit{
+    min-height: 340px;
+    background: linear-gradient(103.11deg, #FF8000 0%, #FF8000 40.95%, #FFD600 100%);
+}
+
+.profit__inner{
+    min-height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.profit__text{
+    max-width: 224px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.profit__text span{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.profit__block{
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    padding: 25px 10px;
+}
 @media (max-width: 1000px) {
     .expenses__cards{
         grid-gap: 20px;
@@ -618,6 +647,14 @@ border: 2px solid #FFFFFF;
     }
     .prices__content{
         display: block;
+    }
+    .profit__inner{
+        padding: 40px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profit__text{
+        padding: 15px 0;
     }
     /*.benefit__card:nth-child(1), .benefit__card:nth-child(2){
         
